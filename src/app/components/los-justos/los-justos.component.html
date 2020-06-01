@@ -1,0 +1,18 @@
+<h1 class="display-4 animated fadeIn slow">Los integrantes justos</h1>
+<hr>
+
+<div class="card-columns animated fadeIn slow">
+    <div class="card" *ngFor="let justo of justos; let i = index">
+        <img [src]="justo.img" class="card-img-top" [alt]="justo.nombre">
+        <div class="card-body">
+            <h5 class="card-title"> {{ justo.nombre }} </h5>
+            <p class="card-text"> {{ justo.bio }} </p>
+
+            <button (click)="showJusto(i)" type="button" class="btn btn-outline-secondary">Ver mas...</button>
+            <!-- por codigo -->
+            <!-- <a [routerLink]="['/justo', i]">Ver mas link..</a>-->
+            <!-- por URL -->
+        </div>
+    </div>
+
+</div>

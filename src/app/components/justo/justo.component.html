@@ -1,0 +1,24 @@
+<h1 class="display-4 animated fadeIn slow"> {{ justo.nombre }} </h1>
+<hr>
+
+<div class="row animated fadeIn slow">
+
+    <div class="col-md-4">
+        <img [src]="justo.img" class="img-fluid">
+        <br><br>
+
+        <div class="btn-group mr-2">
+            <a type="button" class="btn btn-outline-secondary" [routerLink]="['/los-justos']">Volver</a>
+        </div>
+        <div class="btn-group mr-2">
+            <a type="button" class="btn btn-outline-secondary" [href]="justo.instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="btn-group mr-2">
+            <a type="button" class="btn btn-outline-secondary" [href]="justo.facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <p class="lead">{{ justo.bio }}</p>
+    </div>
+</div>
