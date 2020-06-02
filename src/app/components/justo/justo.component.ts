@@ -15,7 +15,6 @@ export class JustoComponent {
 
     this.activateRoute.params.subscribe( params => {
       this.justo = this.justoService.getJusto( params['id'] )
-      console.log(this.justo);
     } )
 
   }

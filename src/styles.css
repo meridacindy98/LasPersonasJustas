@@ -11,6 +11,11 @@ footer {
     padding-bottom: 50px;
 }
 
+.card-style :hover {
+    color: #0c0202;
+    background-color: #e8e8e8;
+}
+
 
 /* animaciones */
 
@@ -29,8 +34,8 @@ footer {
 }
 
 .slow {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
