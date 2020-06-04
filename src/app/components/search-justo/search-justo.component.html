@@ -2,12 +2,5 @@
 <hr>
 
 <div class="card-columns card-style  animated fadeIn slow" style="column-count: 2">
-    <div class="card" *ngFor="let justo of searchJusto" (click)="showJusto(justo.id)">
-        <img [src]="justo.img" class="card-img-top" [alt]="justo.nombre">
-        <div class="card-body">
-            <h5 class="card-title"> {{ justo.nombre }} </h5>
-            <p class="card-text"> {{ justo.bio }} </p>
-        </div>
-    </div>
-
+    <app-justo-card (justoSelected)="showJusto( $event )" [justo]="justo" [index]="justo.id" *ngFor="let justo of justos"></app-justo-card>
 </div>

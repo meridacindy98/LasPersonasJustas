@@ -2,17 +2,10 @@
 <hr>
 
 <div class="card-columns card-style  animated fadeIn slow" style="column-count: 2">
-    <div class="card" *ngFor="let justo of justos; let i = index" (click)="showJusto(i)">
-        <img [src]="justo.img" class="card-img-top" [alt]="justo.nombre">
-        <div class="card-body">
-            <h5 class="card-title"> {{ justo.nombre }} </h5>
-            <p class="card-text"> {{ justo.bio }} </p>
 
-            <!-- por codigo -->
-            <!-- <button (click)="showJusto(i)" type="button" class="btn btn-outline-secondary">Ver mas...</button> -->
-            <!-- por URL -->
-            <!-- <a [routerLink]="['/justo', i]">Ver mas link..</a>-->
-        </div>
-    </div>
+    <app-justo-card (justoSelected)="showJusto( $event )" [justo]="justo" [index]="i" *ngFor="let justo of justos; let i = index"></app-justo-card>
+    <!-- con la palabra justo entre [] significa que puedo mandarle una variable o una expresion a ese componente
+    en este caso el componente justo-card la palabra que esta entre corchetes no necesariamente debe ser igual
+    al nombre de la variable -->
 
 </div>

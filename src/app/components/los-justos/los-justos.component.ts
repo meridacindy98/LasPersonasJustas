@@ -7,6 +7,7 @@ import { Router } from "@angular/router";
   templateUrl: './los-justos.component.html',
   styleUrls: ['./los-justos.component.css']
 })
+
 export class LosJustosComponent implements OnInit {
   justos:any [] = [];
 

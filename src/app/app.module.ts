@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { LosJustosComponent } from './components/los-justos/los-justos.component';
 import { JustoComponent } from './components/justo/justo.component';
 import { SearchJustoComponent } from './components/search-justo/search-justo.component';
+import { JustoCardComponent } from './components/justo-card/justo-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SearchJustoComponent } from './components/search-justo/search-justo.com
     AboutComponent,
     LosJustosComponent,
     JustoComponent,
-    SearchJustoComponent
+    SearchJustoComponent,
+    JustoCardComponent
   ],
   imports: [
     BrowserModule,

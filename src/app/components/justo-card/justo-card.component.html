@@ -1,0 +1,12 @@
+<div class="card" (click)="showJusto(justo.id)">
+    <img [src]="justo.img" class="card-img-top" [alt]="justo.nombre">
+    <div class="card-body">
+        <h5 class="card-title"> {{ justo.nombre }} </h5>
+        <p class="card-text"> {{ justo.bio }} </p>
+
+        <!-- por codigo -->
+        <!-- <button (click)="showJusto(i)" type="button" class="btn btn-outline-secondary">Ver mas...</button> -->
+        <!-- por URL -->
+        <!-- <a [routerLink]="['/justo', i]">Ver mas link..</a>-->
+    </div>
+</div>

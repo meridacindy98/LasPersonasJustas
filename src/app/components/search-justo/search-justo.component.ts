@@ -10,20 +10,19 @@ import { Router } from "@angular/router";
 })
 export class SearchJustoComponent implements OnInit {
 
-  searchJusto:any [] = [];
-  index:number;
+  justos:any [] = [];
 
   constructor(private activateRoute:ActivatedRoute, private justoService:JustosService, private router:Router) { }
 
   ngOnInit(): void {
       this.activateRoute.params.subscribe( params => {
-      this.searchJusto = this.justoService.buscarJusto( params['text'] );      
+      this.justos = this.justoService.buscarJusto( params['text'] );  
     } )    
   }
 
   //me redirecciona a la pag individual del justo
-  showJusto( i:number ){    
+  showJusto( i:number ){  
     this.router.navigate( ['/justo', i] );
-    }
+  }
 
 }
